@@ -45,7 +45,7 @@ Public Class crEARR
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "EngDesignTracking.crEARR.rpt"
+            Return "EngDesignTrackingTestTest.crEARR.rpt"
         End Get
         Set
             'Do nothing

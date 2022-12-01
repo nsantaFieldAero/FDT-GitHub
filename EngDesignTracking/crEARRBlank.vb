@@ -45,7 +45,7 @@ Public Class crEARRBlank
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "EngDesignTracking.crEARRBlank.rpt"
+            Return "EngDesignTrackingTestTest.crEARRBlank.rpt"
         End Get
         Set
             'Do nothing
