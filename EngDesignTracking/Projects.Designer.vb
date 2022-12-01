@@ -136,7 +136,6 @@ Partial Class Projects
         Me.SqlDataAdapter4 = New System.Data.SqlClient.SqlDataAdapter()
         Me.txtRecordIDSerial = New System.Windows.Forms.TextBox()
         Me.btnCertificationManager = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bsProjects, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -173,11 +172,9 @@ Partial Class Projects
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtRecordID)
         Me.GroupBox1.Controls.Add(Me.txtProjectNameBeforeSaveChanges)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 23)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GroupBox1.Size = New System.Drawing.Size(662, 1537)
+        Me.GroupBox1.Size = New System.Drawing.Size(331, 799)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Projects"
@@ -185,12 +182,10 @@ Partial Class Projects
         'GridControl1
         '
         Me.GridControl1.DataSource = Me.bsProjects
-        Me.GridControl1.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridControl1.Location = New System.Drawing.Point(12, 37)
+        Me.GridControl1.Location = New System.Drawing.Point(6, 19)
         Me.GridControl1.MainView = Me.GridView1
-        Me.GridControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(638, 1273)
+        Me.GridControl1.Size = New System.Drawing.Size(319, 662)
         Me.GridControl1.TabIndex = 21
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -207,8 +202,6 @@ Partial Class Projects
         'GridView1
         '
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colRecordID, Me.colProjectName, Me.colProjectNumber, Me.colProgramName, Me.colActive, Me.colDocNumbering, Me.colProductGroup, Me.colStandard, Me.colLegacy, Me.colPDFFolder, Me.colShortForm})
-        Me.GridView1.DetailHeight = 673
-        Me.GridView1.FixedLineWidth = 4
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.LevelIndent = 0
         Me.GridView1.Name = "GridView1"
@@ -217,90 +210,69 @@ Partial Class Projects
         'colRecordID
         '
         Me.colRecordID.FieldName = "RecordID"
-        Me.colRecordID.MinWidth = 40
         Me.colRecordID.Name = "colRecordID"
-        Me.colRecordID.Width = 150
         '
         'colProjectName
         '
         Me.colProjectName.FieldName = "ProjectName"
-        Me.colProjectName.MinWidth = 40
         Me.colProjectName.Name = "colProjectName"
         Me.colProjectName.Visible = True
         Me.colProjectName.VisibleIndex = 1
-        Me.colProjectName.Width = 436
+        Me.colProjectName.Width = 218
         '
         'colProjectNumber
         '
         Me.colProjectNumber.FieldName = "ProjectNumber"
-        Me.colProjectNumber.MinWidth = 40
         Me.colProjectNumber.Name = "colProjectNumber"
         Me.colProjectNumber.Visible = True
         Me.colProjectNumber.VisibleIndex = 0
-        Me.colProjectNumber.Width = 166
+        Me.colProjectNumber.Width = 83
         '
         'colProgramName
         '
         Me.colProgramName.FieldName = "ProgramName"
-        Me.colProgramName.MinWidth = 40
         Me.colProgramName.Name = "colProgramName"
-        Me.colProgramName.Width = 150
         '
         'colActive
         '
         Me.colActive.FieldName = "Active"
-        Me.colActive.MinWidth = 40
         Me.colActive.Name = "colActive"
-        Me.colActive.Width = 150
         '
         'colDocNumbering
         '
         Me.colDocNumbering.FieldName = "DocNumbering"
-        Me.colDocNumbering.MinWidth = 40
         Me.colDocNumbering.Name = "colDocNumbering"
-        Me.colDocNumbering.Width = 150
         '
         'colProductGroup
         '
         Me.colProductGroup.FieldName = "ProductGroup"
-        Me.colProductGroup.MinWidth = 40
         Me.colProductGroup.Name = "colProductGroup"
-        Me.colProductGroup.Width = 150
         '
         'colStandard
         '
         Me.colStandard.FieldName = "Standard"
-        Me.colStandard.MinWidth = 40
         Me.colStandard.Name = "colStandard"
-        Me.colStandard.Width = 150
         '
         'colLegacy
         '
         Me.colLegacy.FieldName = "Legacy"
-        Me.colLegacy.MinWidth = 40
         Me.colLegacy.Name = "colLegacy"
-        Me.colLegacy.Width = 150
         '
         'colPDFFolder
         '
         Me.colPDFFolder.FieldName = "PDFFolder"
-        Me.colPDFFolder.MinWidth = 40
         Me.colPDFFolder.Name = "colPDFFolder"
-        Me.colPDFFolder.Width = 150
         '
         'colShortForm
         '
         Me.colShortForm.FieldName = "ShortForm"
-        Me.colShortForm.MinWidth = 40
         Me.colShortForm.Name = "colShortForm"
-        Me.colShortForm.Width = 150
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(508, 1483)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnCancel.Location = New System.Drawing.Point(254, 771)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(140, 44)
+        Me.btnCancel.Size = New System.Drawing.Size(70, 23)
         Me.btnCancel.TabIndex = 20
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
@@ -308,124 +280,110 @@ Partial Class Projects
         'Label10
         '
         Me.Label10.BackColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(16, 1410)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label10.Location = New System.Drawing.Point(8, 733)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(622, 10)
+        Me.Label10.Size = New System.Drawing.Size(311, 5)
         Me.Label10.TabIndex = 19
         Me.Label10.Text = "Label10"
         '
         'btnAddNew
         '
-        Me.btnAddNew.Location = New System.Drawing.Point(356, 1483)
-        Me.btnAddNew.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnAddNew.Location = New System.Drawing.Point(178, 771)
         Me.btnAddNew.Name = "btnAddNew"
-        Me.btnAddNew.Size = New System.Drawing.Size(140, 44)
+        Me.btnAddNew.Size = New System.Drawing.Size(70, 23)
         Me.btnAddNew.TabIndex = 18
         Me.btnAddNew.Text = "Add New"
         Me.btnAddNew.UseVisualStyleBackColor = True
         '
         'btnDeleteProject
         '
-        Me.btnDeleteProject.Location = New System.Drawing.Point(304, 1321)
-        Me.btnDeleteProject.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnDeleteProject.Location = New System.Drawing.Point(152, 687)
         Me.btnDeleteProject.Name = "btnDeleteProject"
-        Me.btnDeleteProject.Size = New System.Drawing.Size(310, 44)
+        Me.btnDeleteProject.Size = New System.Drawing.Size(155, 23)
         Me.btnDeleteProject.TabIndex = 17
         Me.btnDeleteProject.Text = "Delete Selected Project Above"
         Me.btnDeleteProject.UseVisualStyleBackColor = True
         '
         'txtAddProjNo
         '
-        Me.txtAddProjNo.Location = New System.Drawing.Point(148, 1487)
-        Me.txtAddProjNo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtAddProjNo.Location = New System.Drawing.Point(74, 773)
         Me.txtAddProjNo.Name = "txtAddProjNo"
-        Me.txtAddProjNo.Size = New System.Drawing.Size(192, 31)
+        Me.txtAddProjNo.Size = New System.Drawing.Size(98, 20)
         Me.txtAddProjNo.TabIndex = 16
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(10, 1487)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label3.Location = New System.Drawing.Point(5, 773)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(114, 26)
+        Me.Label3.Size = New System.Drawing.Size(63, 13)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Project #:"
         '
         'txtAddProjDesc
         '
-        Me.txtAddProjDesc.Location = New System.Drawing.Point(230, 1427)
-        Me.txtAddProjDesc.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtAddProjDesc.Location = New System.Drawing.Point(115, 742)
         Me.txtAddProjDesc.Name = "txtAddProjDesc"
-        Me.txtAddProjDesc.Size = New System.Drawing.Size(414, 31)
+        Me.txtAddProjDesc.Size = New System.Drawing.Size(209, 20)
         Me.txtAddProjDesc.TabIndex = 14
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(10, 1427)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label1.Location = New System.Drawing.Point(5, 742)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(209, 26)
+        Me.Label1.Size = New System.Drawing.Size(113, 13)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "New Project Desc:"
         '
         'txtRecordID
         '
-        Me.txtRecordID.Location = New System.Drawing.Point(230, 763)
-        Me.txtRecordID.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRecordID.Location = New System.Drawing.Point(115, 397)
         Me.txtRecordID.Name = "txtRecordID"
-        Me.txtRecordID.Size = New System.Drawing.Size(196, 31)
+        Me.txtRecordID.Size = New System.Drawing.Size(100, 20)
         Me.txtRecordID.TabIndex = 22
         '
         'txtProjectNameBeforeSaveChanges
         '
-        Me.txtProjectNameBeforeSaveChanges.Location = New System.Drawing.Point(280, 452)
-        Me.txtProjectNameBeforeSaveChanges.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtProjectNameBeforeSaveChanges.Location = New System.Drawing.Point(140, 235)
         Me.txtProjectNameBeforeSaveChanges.Name = "txtProjectNameBeforeSaveChanges"
-        Me.txtProjectNameBeforeSaveChanges.Size = New System.Drawing.Size(196, 31)
+        Me.txtProjectNameBeforeSaveChanges.Size = New System.Drawing.Size(100, 20)
         Me.txtProjectNameBeforeSaveChanges.TabIndex = 23
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(1760, 52)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label9.Location = New System.Drawing.Point(880, 27)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(83, 25)
+        Me.Label9.Size = New System.Drawing.Size(43, 13)
         Me.Label9.TabIndex = 3
         Me.Label9.Text = "Active?"
         '
         'txtPDFFolder
         '
-        Me.txtPDFFolder.Location = New System.Drawing.Point(200, 150)
-        Me.txtPDFFolder.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPDFFolder.Location = New System.Drawing.Point(100, 78)
         Me.txtPDFFolder.Name = "txtPDFFolder"
-        Me.txtPDFFolder.Size = New System.Drawing.Size(458, 31)
+        Me.txtPDFFolder.Size = New System.Drawing.Size(231, 20)
         Me.txtPDFFolder.TabIndex = 7
         '
         'txtShortForm
         '
-        Me.txtShortForm.Location = New System.Drawing.Point(836, 96)
-        Me.txtShortForm.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtShortForm.Location = New System.Drawing.Point(418, 50)
         Me.txtShortForm.Name = "txtShortForm"
-        Me.txtShortForm.Size = New System.Drawing.Size(348, 31)
+        Me.txtShortForm.Size = New System.Drawing.Size(176, 20)
         Me.txtShortForm.TabIndex = 6
         '
         'txtProjectName
         '
-        Me.txtProjectName.Location = New System.Drawing.Point(200, 96)
-        Me.txtProjectName.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtProjectName.Location = New System.Drawing.Point(100, 50)
         Me.txtProjectName.Name = "txtProjectName"
-        Me.txtProjectName.Size = New System.Drawing.Size(458, 31)
+        Me.txtProjectName.Size = New System.Drawing.Size(231, 20)
         Me.txtProjectName.TabIndex = 4
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.cboProjectNumSave)
         Me.GroupBox2.Controls.Add(Me.cboProductGroupSave)
         Me.GroupBox2.Controls.Add(Me.cboDocNumberingSave)
@@ -441,11 +399,9 @@ Partial Class Projects
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Location = New System.Drawing.Point(680, 23)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GroupBox2.Location = New System.Drawing.Point(340, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GroupBox2.Size = New System.Drawing.Size(2184, 310)
+        Me.GroupBox2.Size = New System.Drawing.Size(1092, 161)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Project Details:"
@@ -453,57 +409,51 @@ Partial Class Projects
         'cboProjectNumSave
         '
         Me.cboProjectNumSave.FormattingEnabled = True
-        Me.cboProjectNumSave.Location = New System.Drawing.Point(200, 37)
-        Me.cboProjectNumSave.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cboProjectNumSave.Location = New System.Drawing.Point(100, 19)
         Me.cboProjectNumSave.Name = "cboProjectNumSave"
-        Me.cboProjectNumSave.Size = New System.Drawing.Size(458, 33)
+        Me.cboProjectNumSave.Size = New System.Drawing.Size(231, 21)
         Me.cboProjectNumSave.TabIndex = 17
         '
         'cboProductGroupSave
         '
         Me.cboProductGroupSave.FormattingEnabled = True
-        Me.cboProductGroupSave.Location = New System.Drawing.Point(836, 206)
-        Me.cboProductGroupSave.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cboProductGroupSave.Location = New System.Drawing.Point(418, 107)
         Me.cboProductGroupSave.Name = "cboProductGroupSave"
-        Me.cboProductGroupSave.Size = New System.Drawing.Size(348, 33)
+        Me.cboProductGroupSave.Size = New System.Drawing.Size(176, 21)
         Me.cboProductGroupSave.TabIndex = 16
         '
         'cboDocNumberingSave
         '
         Me.cboDocNumberingSave.FormattingEnabled = True
         Me.cboDocNumberingSave.Items.AddRange(New Object() {"Field Aerospace (OKC)", "Field Aerospace (Canada)", "Field Aerospace (Combined)"})
-        Me.cboDocNumberingSave.Location = New System.Drawing.Point(200, 206)
-        Me.cboDocNumberingSave.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cboDocNumberingSave.Location = New System.Drawing.Point(100, 107)
         Me.cboDocNumberingSave.Name = "cboDocNumberingSave"
-        Me.cboDocNumberingSave.Size = New System.Drawing.Size(458, 33)
+        Me.cboDocNumberingSave.Size = New System.Drawing.Size(231, 21)
         Me.cboDocNumberingSave.TabIndex = 15
         '
         'lblProductGroupSave
         '
         Me.lblProductGroupSave.AutoSize = True
-        Me.lblProductGroupSave.Location = New System.Drawing.Point(682, 212)
-        Me.lblProductGroupSave.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.lblProductGroupSave.Location = New System.Drawing.Point(341, 110)
         Me.lblProductGroupSave.Name = "lblProductGroupSave"
-        Me.lblProductGroupSave.Size = New System.Drawing.Size(157, 25)
+        Me.lblProductGroupSave.Size = New System.Drawing.Size(79, 13)
         Me.lblProductGroupSave.TabIndex = 14
         Me.lblProductGroupSave.Text = "Product Group:"
         '
         'lblDocNumberingSave
         '
         Me.lblDocNumberingSave.AutoSize = True
-        Me.lblDocNumberingSave.Location = New System.Drawing.Point(40, 212)
-        Me.lblDocNumberingSave.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.lblDocNumberingSave.Location = New System.Drawing.Point(20, 110)
         Me.lblDocNumberingSave.Name = "lblDocNumberingSave"
-        Me.lblDocNumberingSave.Size = New System.Drawing.Size(166, 25)
+        Me.lblDocNumberingSave.Size = New System.Drawing.Size(84, 13)
         Me.lblDocNumberingSave.TabIndex = 13
         Me.lblDocNumberingSave.Text = "Doc Numbering:"
         '
         'btnSaveProject
         '
-        Me.btnSaveProject.Location = New System.Drawing.Point(46, 258)
-        Me.btnSaveProject.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnSaveProject.Location = New System.Drawing.Point(23, 134)
         Me.btnSaveProject.Name = "btnSaveProject"
-        Me.btnSaveProject.Size = New System.Drawing.Size(236, 44)
+        Me.btnSaveProject.Size = New System.Drawing.Size(118, 23)
         Me.btnSaveProject.TabIndex = 8
         Me.btnSaveProject.Text = "Save Changes"
         Me.btnSaveProject.UseVisualStyleBackColor = True
@@ -512,49 +462,44 @@ Partial Class Projects
         '
         Me.cboActive.FormattingEnabled = True
         Me.cboActive.Items.AddRange(New Object() {"True", "False"})
-        Me.cboActive.Location = New System.Drawing.Point(1858, 50)
-        Me.cboActive.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cboActive.Location = New System.Drawing.Point(929, 26)
         Me.cboActive.Name = "cboActive"
-        Me.cboActive.Size = New System.Drawing.Size(238, 33)
+        Me.cboActive.Size = New System.Drawing.Size(121, 21)
         Me.cboActive.TabIndex = 3
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(40, 150)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label8.Location = New System.Drawing.Point(20, 78)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(127, 25)
+        Me.Label8.Size = New System.Drawing.Size(63, 13)
         Me.Label8.TabIndex = 4
         Me.Label8.Text = "PDF Folder:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(682, 96)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label7.Location = New System.Drawing.Point(341, 50)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(124, 25)
+        Me.Label7.Size = New System.Drawing.Size(61, 13)
         Me.Label7.TabIndex = 3
         Me.Label7.Text = "Short Form:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(40, 96)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label6.Location = New System.Drawing.Point(20, 50)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(147, 25)
+        Me.Label6.Size = New System.Drawing.Size(74, 13)
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Project Name:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(40, 40)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label4.Location = New System.Drawing.Point(20, 21)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(103, 25)
+        Me.Label4.Size = New System.Drawing.Size(53, 13)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Project #:"
         '
@@ -600,13 +545,11 @@ Partial Class Projects
         'GridControl2
         '
         Me.GridControl2.DataSource = Me.bsSystems
-        Me.GridControl2.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridControl2.Location = New System.Drawing.Point(684, 369)
+        Me.GridControl2.Location = New System.Drawing.Point(342, 192)
         Me.GridControl2.MainView = Me.GridView2
-        Me.GridControl2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemComboBox1})
-        Me.GridControl2.Size = New System.Drawing.Size(774, 1073)
+        Me.GridControl2.Size = New System.Drawing.Size(387, 558)
         Me.GridControl2.TabIndex = 4
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
         '
@@ -623,8 +566,6 @@ Partial Class Projects
         'GridView2
         '
         Me.GridView2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colRecordID1, Me.colProgram, Me.colSystemDescription, Me.colactive1})
-        Me.GridView2.DetailHeight = 673
-        Me.GridView2.FixedLineWidth = 4
         Me.GridView2.GridControl = Me.GridControl2
         Me.GridView2.LevelIndent = 0
         Me.GridView2.Name = "GridView2"
@@ -635,26 +576,20 @@ Partial Class Projects
         'colRecordID1
         '
         Me.colRecordID1.FieldName = "RecordID"
-        Me.colRecordID1.MinWidth = 40
         Me.colRecordID1.Name = "colRecordID1"
-        Me.colRecordID1.Width = 150
         '
         'colProgram
         '
         Me.colProgram.FieldName = "Program"
-        Me.colProgram.MinWidth = 40
         Me.colProgram.Name = "colProgram"
-        Me.colProgram.Width = 150
         '
         'colSystemDescription
         '
         Me.colSystemDescription.ColumnEdit = Me.RepositoryItemComboBox1
         Me.colSystemDescription.FieldName = "SystemDescription"
-        Me.colSystemDescription.MinWidth = 40
         Me.colSystemDescription.Name = "colSystemDescription"
         Me.colSystemDescription.Visible = True
         Me.colSystemDescription.VisibleIndex = 0
-        Me.colSystemDescription.Width = 150
         '
         'RepositoryItemComboBox1
         '
@@ -666,20 +601,16 @@ Partial Class Projects
         'colactive1
         '
         Me.colactive1.FieldName = "active"
-        Me.colactive1.MinWidth = 40
         Me.colactive1.Name = "colactive1"
-        Me.colactive1.Width = 150
         '
         'gridAircrafts
         '
         Me.gridAircrafts.DataSource = Me.bsAircrafts
-        Me.gridAircrafts.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.gridAircrafts.Location = New System.Drawing.Point(1470, 369)
+        Me.gridAircrafts.Location = New System.Drawing.Point(735, 192)
         Me.gridAircrafts.MainView = Me.GridView3
-        Me.gridAircrafts.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.gridAircrafts.Name = "gridAircrafts"
         Me.gridAircrafts.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemComboBox2})
-        Me.gridAircrafts.Size = New System.Drawing.Size(794, 496)
+        Me.gridAircrafts.Size = New System.Drawing.Size(397, 258)
         Me.gridAircrafts.TabIndex = 5
         Me.gridAircrafts.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView3})
         '
@@ -696,8 +627,6 @@ Partial Class Projects
         'GridView3
         '
         Me.GridView3.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colRecordID2, Me.colAircraft, Me.colProgramName1, Me.colProgramNumber, Me.colProjectName1, Me.colProjectNumber1, Me.colLocation})
-        Me.GridView3.DetailHeight = 673
-        Me.GridView3.FixedLineWidth = 4
         Me.GridView3.GridControl = Me.gridAircrafts
         Me.GridView3.LevelIndent = 0
         Me.GridView3.Name = "GridView3"
@@ -708,19 +637,15 @@ Partial Class Projects
         'colRecordID2
         '
         Me.colRecordID2.FieldName = "RecordID"
-        Me.colRecordID2.MinWidth = 40
         Me.colRecordID2.Name = "colRecordID2"
-        Me.colRecordID2.Width = 150
         '
         'colAircraft
         '
         Me.colAircraft.ColumnEdit = Me.RepositoryItemComboBox2
         Me.colAircraft.FieldName = "Aircraft"
-        Me.colAircraft.MinWidth = 40
         Me.colAircraft.Name = "colAircraft"
         Me.colAircraft.Visible = True
         Me.colAircraft.VisibleIndex = 0
-        Me.colAircraft.Width = 150
         '
         'RepositoryItemComboBox2
         '
@@ -732,48 +657,36 @@ Partial Class Projects
         'colProgramName1
         '
         Me.colProgramName1.FieldName = "ProgramName"
-        Me.colProgramName1.MinWidth = 40
         Me.colProgramName1.Name = "colProgramName1"
-        Me.colProgramName1.Width = 150
         '
         'colProgramNumber
         '
         Me.colProgramNumber.FieldName = "ProgramNumber"
-        Me.colProgramNumber.MinWidth = 40
         Me.colProgramNumber.Name = "colProgramNumber"
-        Me.colProgramNumber.Width = 150
         '
         'colProjectName1
         '
         Me.colProjectName1.FieldName = "ProjectName"
-        Me.colProjectName1.MinWidth = 40
         Me.colProjectName1.Name = "colProjectName1"
-        Me.colProjectName1.Width = 150
         '
         'colProjectNumber1
         '
         Me.colProjectNumber1.FieldName = "ProjectNumber"
-        Me.colProjectNumber1.MinWidth = 40
         Me.colProjectNumber1.Name = "colProjectNumber1"
-        Me.colProjectNumber1.Width = 150
         '
         'colLocation
         '
         Me.colLocation.FieldName = "Location"
-        Me.colLocation.MinWidth = 40
         Me.colLocation.Name = "colLocation"
-        Me.colLocation.Width = 150
         '
         'GridControl4
         '
         Me.GridControl4.DataSource = Me.bsAircraftSerial
-        Me.GridControl4.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridControl4.Location = New System.Drawing.Point(1470, 975)
+        Me.GridControl4.Location = New System.Drawing.Point(735, 507)
         Me.GridControl4.MainView = Me.GridView4
-        Me.GridControl4.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.GridControl4.Name = "GridControl4"
         Me.GridControl4.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemComboBox3})
-        Me.GridControl4.Size = New System.Drawing.Size(800, 467)
+        Me.GridControl4.Size = New System.Drawing.Size(400, 243)
         Me.GridControl4.TabIndex = 6
         Me.GridControl4.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView4})
         '
@@ -790,8 +703,6 @@ Partial Class Projects
         'GridView4
         '
         Me.GridView4.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colRecordID3, Me.colSerialNum, Me.colAircraft1, Me.colDescription, Me.colProgram1, Me.colProject, Me.colSystem})
-        Me.GridView4.DetailHeight = 673
-        Me.GridView4.FixedLineWidth = 4
         Me.GridView4.GridControl = Me.GridControl4
         Me.GridView4.LevelIndent = 0
         Me.GridView4.Name = "GridView4"
@@ -802,28 +713,22 @@ Partial Class Projects
         'colRecordID3
         '
         Me.colRecordID3.FieldName = "RecordID"
-        Me.colRecordID3.MinWidth = 40
         Me.colRecordID3.Name = "colRecordID3"
-        Me.colRecordID3.Width = 150
         '
         'colSerialNum
         '
         Me.colSerialNum.FieldName = "SerialNum"
-        Me.colSerialNum.MinWidth = 40
         Me.colSerialNum.Name = "colSerialNum"
         Me.colSerialNum.Visible = True
         Me.colSerialNum.VisibleIndex = 0
-        Me.colSerialNum.Width = 150
         '
         'colAircraft1
         '
         Me.colAircraft1.ColumnEdit = Me.RepositoryItemComboBox3
         Me.colAircraft1.FieldName = "Aircraft"
-        Me.colAircraft1.MinWidth = 40
         Me.colAircraft1.Name = "colAircraft1"
         Me.colAircraft1.Visible = True
         Me.colAircraft1.VisibleIndex = 1
-        Me.colAircraft1.Width = 150
         '
         'RepositoryItemComboBox3
         '
@@ -835,89 +740,75 @@ Partial Class Projects
         'colDescription
         '
         Me.colDescription.FieldName = "Description"
-        Me.colDescription.MinWidth = 40
         Me.colDescription.Name = "colDescription"
         Me.colDescription.Visible = True
         Me.colDescription.VisibleIndex = 2
-        Me.colDescription.Width = 150
         '
         'colProgram1
         '
         Me.colProgram1.FieldName = "Program"
-        Me.colProgram1.MinWidth = 40
         Me.colProgram1.Name = "colProgram1"
-        Me.colProgram1.Width = 150
         '
         'colProject
         '
         Me.colProject.FieldName = "Project"
-        Me.colProject.MinWidth = 40
         Me.colProject.Name = "colProject"
-        Me.colProject.Width = 150
         '
         'colSystem
         '
         Me.colSystem.FieldName = "System"
-        Me.colSystem.MinWidth = 40
         Me.colSystem.Name = "colSystem"
-        Me.colSystem.Width = 150
         '
         'btnSaveSystems
         '
-        Me.btnSaveSystems.Location = New System.Drawing.Point(884, 1454)
-        Me.btnSaveSystems.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnSaveSystems.Location = New System.Drawing.Point(442, 756)
         Me.btnSaveSystems.Name = "btnSaveSystems"
-        Me.btnSaveSystems.Size = New System.Drawing.Size(196, 44)
+        Me.btnSaveSystems.Size = New System.Drawing.Size(98, 23)
         Me.btnSaveSystems.TabIndex = 7
         Me.btnSaveSystems.Text = "Save"
         Me.btnSaveSystems.UseVisualStyleBackColor = True
         '
         'btnDeleteSystems
         '
-        Me.btnDeleteSystems.Location = New System.Drawing.Point(1092, 1454)
-        Me.btnDeleteSystems.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnDeleteSystems.Location = New System.Drawing.Point(546, 756)
         Me.btnDeleteSystems.Name = "btnDeleteSystems"
-        Me.btnDeleteSystems.Size = New System.Drawing.Size(196, 44)
+        Me.btnDeleteSystems.Size = New System.Drawing.Size(98, 23)
         Me.btnDeleteSystems.TabIndex = 8
         Me.btnDeleteSystems.Text = "Delete"
         Me.btnDeleteSystems.UseVisualStyleBackColor = True
         '
         'btnDeleteAssociatedAircraft
         '
-        Me.btnDeleteAssociatedAircraft.Location = New System.Drawing.Point(1866, 877)
-        Me.btnDeleteAssociatedAircraft.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnDeleteAssociatedAircraft.Location = New System.Drawing.Point(933, 456)
         Me.btnDeleteAssociatedAircraft.Name = "btnDeleteAssociatedAircraft"
-        Me.btnDeleteAssociatedAircraft.Size = New System.Drawing.Size(196, 44)
+        Me.btnDeleteAssociatedAircraft.Size = New System.Drawing.Size(98, 23)
         Me.btnDeleteAssociatedAircraft.TabIndex = 10
         Me.btnDeleteAssociatedAircraft.Text = "Delete"
         Me.btnDeleteAssociatedAircraft.UseVisualStyleBackColor = True
         '
         'btnSaveAssociatedAircraft
         '
-        Me.btnSaveAssociatedAircraft.Location = New System.Drawing.Point(1658, 877)
-        Me.btnSaveAssociatedAircraft.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnSaveAssociatedAircraft.Location = New System.Drawing.Point(829, 456)
         Me.btnSaveAssociatedAircraft.Name = "btnSaveAssociatedAircraft"
-        Me.btnSaveAssociatedAircraft.Size = New System.Drawing.Size(196, 44)
+        Me.btnSaveAssociatedAircraft.Size = New System.Drawing.Size(98, 23)
         Me.btnSaveAssociatedAircraft.TabIndex = 9
         Me.btnSaveAssociatedAircraft.Text = "Save"
         Me.btnSaveAssociatedAircraft.UseVisualStyleBackColor = True
         '
         'btnDeleteSerialNum
         '
-        Me.btnDeleteSerialNum.Location = New System.Drawing.Point(1870, 1456)
-        Me.btnDeleteSerialNum.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnDeleteSerialNum.Location = New System.Drawing.Point(935, 757)
         Me.btnDeleteSerialNum.Name = "btnDeleteSerialNum"
-        Me.btnDeleteSerialNum.Size = New System.Drawing.Size(196, 44)
+        Me.btnDeleteSerialNum.Size = New System.Drawing.Size(98, 23)
         Me.btnDeleteSerialNum.TabIndex = 12
         Me.btnDeleteSerialNum.Text = "Delete"
         Me.btnDeleteSerialNum.UseVisualStyleBackColor = True
         '
         'btnSaveSerialNum
         '
-        Me.btnSaveSerialNum.Location = New System.Drawing.Point(1662, 1456)
-        Me.btnSaveSerialNum.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnSaveSerialNum.Location = New System.Drawing.Point(831, 757)
         Me.btnSaveSerialNum.Name = "btnSaveSerialNum"
-        Me.btnSaveSerialNum.Size = New System.Drawing.Size(196, 44)
+        Me.btnSaveSerialNum.Size = New System.Drawing.Size(98, 23)
         Me.btnSaveSerialNum.TabIndex = 11
         Me.btnSaveSerialNum.Text = "Save"
         Me.btnSaveSerialNum.UseVisualStyleBackColor = True
@@ -926,10 +817,9 @@ Partial Class Projects
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(680, 338)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label2.Location = New System.Drawing.Point(340, 176)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(111, 26)
+        Me.Label2.Size = New System.Drawing.Size(57, 13)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Systems:"
         '
@@ -937,10 +827,9 @@ Partial Class Projects
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(1464, 338)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label5.Location = New System.Drawing.Point(732, 176)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(220, 26)
+        Me.Label5.Size = New System.Drawing.Size(118, 13)
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "Associated Aircraft:"
         '
@@ -948,10 +837,9 @@ Partial Class Projects
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(1470, 944)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label11.Location = New System.Drawing.Point(735, 491)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(268, 26)
+        Me.Label11.Size = New System.Drawing.Size(141, 13)
         Me.Label11.TabIndex = 16
         Me.Label11.Text = "Aircraft Serial Numbers:"
         '
@@ -959,10 +847,9 @@ Partial Class Projects
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(2274, 338)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label12.Location = New System.Drawing.Point(1137, 176)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(263, 26)
+        Me.Label12.Size = New System.Drawing.Size(137, 13)
         Me.Label12.TabIndex = 17
         Me.Label12.Text = "Assigned to Program(s)"
         '
@@ -1000,21 +887,19 @@ Partial Class Projects
         '
         'txtRecordIDSystems
         '
-        Me.txtRecordIDSystems.Location = New System.Drawing.Point(760, 825)
-        Me.txtRecordIDSystems.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRecordIDSystems.Location = New System.Drawing.Point(380, 429)
         Me.txtRecordIDSystems.Name = "txtRecordIDSystems"
-        Me.txtRecordIDSystems.Size = New System.Drawing.Size(196, 31)
+        Me.txtRecordIDSystems.Size = New System.Drawing.Size(100, 20)
         Me.txtRecordIDSystems.TabIndex = 18
         '
         'lstAssignedPrograms
         '
         Me.lstAssignedPrograms.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstAssignedPrograms.FormattingEnabled = True
-        Me.lstAssignedPrograms.ItemHeight = 33
-        Me.lstAssignedPrograms.Location = New System.Drawing.Point(2280, 369)
-        Me.lstAssignedPrograms.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.lstAssignedPrograms.ItemHeight = 18
+        Me.lstAssignedPrograms.Location = New System.Drawing.Point(1140, 192)
         Me.lstAssignedPrograms.Name = "lstAssignedPrograms"
-        Me.lstAssignedPrograms.Size = New System.Drawing.Size(800, 1027)
+        Me.lstAssignedPrograms.Size = New System.Drawing.Size(402, 526)
         Me.lstAssignedPrograms.TabIndex = 19
         '
         'SqlSelectCommand3
@@ -1057,10 +942,9 @@ Partial Class Projects
         '
         'txtRecordIDAircrafts
         '
-        Me.txtRecordIDAircrafts.Location = New System.Drawing.Point(1606, 687)
-        Me.txtRecordIDAircrafts.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRecordIDAircrafts.Location = New System.Drawing.Point(803, 357)
         Me.txtRecordIDAircrafts.Name = "txtRecordIDAircrafts"
-        Me.txtRecordIDAircrafts.Size = New System.Drawing.Size(196, 31)
+        Me.txtRecordIDAircrafts.Size = New System.Drawing.Size(100, 20)
         Me.txtRecordIDAircrafts.TabIndex = 20
         '
         'SqlSelectCommand4
@@ -1097,36 +981,25 @@ Partial Class Projects
         '
         'txtRecordIDSerial
         '
-        Me.txtRecordIDSerial.Location = New System.Drawing.Point(1580, 1263)
-        Me.txtRecordIDSerial.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRecordIDSerial.Location = New System.Drawing.Point(790, 657)
         Me.txtRecordIDSerial.Name = "txtRecordIDSerial"
-        Me.txtRecordIDSerial.Size = New System.Drawing.Size(196, 31)
+        Me.txtRecordIDSerial.Size = New System.Drawing.Size(100, 20)
         Me.txtRecordIDSerial.TabIndex = 21
         '
         'btnCertificationManager
         '
-        Me.btnCertificationManager.Location = New System.Drawing.Point(2758, 1504)
-        Me.btnCertificationManager.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnCertificationManager.Location = New System.Drawing.Point(1379, 782)
         Me.btnCertificationManager.Name = "btnCertificationManager"
-        Me.btnCertificationManager.Size = New System.Drawing.Size(322, 44)
+        Me.btnCertificationManager.Size = New System.Drawing.Size(161, 23)
         Me.btnCertificationManager.TabIndex = 22
         Me.btnCertificationManager.Text = "Certification Manager"
         Me.btnCertificationManager.UseVisualStyleBackColor = True
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(1257, 165)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 115)
-        Me.Button1.TabIndex = 18
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Projects
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(2884, 1694)
+        Me.ClientSize = New System.Drawing.Size(1484, 881)
         Me.Controls.Add(Me.btnCertificationManager)
         Me.Controls.Add(Me.lstAssignedPrograms)
         Me.Controls.Add(Me.Label12)
@@ -1147,7 +1020,6 @@ Partial Class Projects
         Me.Controls.Add(Me.txtRecordIDSystems)
         Me.Controls.Add(Me.txtRecordIDAircrafts)
         Me.Controls.Add(Me.txtRecordIDSerial)
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "Projects"
         Me.Text = "Projects"
         Me.GroupBox1.ResumeLayout(False)
@@ -1290,5 +1162,4 @@ Partial Class Projects
     Friend WithEvents cboProjectNumSave As ComboBox
     Friend WithEvents btnCertificationManager As Button
     Friend WithEvents txtProjectNameBeforeSaveChanges As TextBox
-    Friend WithEvents Button1 As Button
 End Class
